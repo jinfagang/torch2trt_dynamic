@@ -12,4 +12,5 @@ if not osp.exists(dir_path):
 
 
 def load_plugin_library():
-    ctypes.CDLL(osp.join(dir_path, 'libamirstan_plugin.so'))
+    # ctypes.CDLL(osp.join(dir_path, 'libamirstan_plugin.so'))
+    ctypes.CDLL(osp.join(osp.expanduser("~"), 'torchtrt_plugins/build/lib/libtorchtrt_plugins.so'))
